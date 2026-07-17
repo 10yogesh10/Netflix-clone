@@ -814,3 +814,26 @@ main .box {
     }
 
 }
+
+
+
+@media (max-width: 768px) {
+    nav, .nav, header .container, .navbar {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 10px 20px !important;
+    }
+
+    .logo, .nav-logo, nav img, .logo img, nav svg, .logo svg {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 110px !important; 
+        max-width: 110px !important;
+        height: auto !important;
+    }
+}
