@@ -396,24 +396,42 @@ main .box {
     }
 }
 
+
 @media (max-width: 768px) {
     .nav {
-        padding: 15px 5% !important;
+        padding: 15px 3% !important;
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
         width: 100% !important;
+        gap: 10px !important;       
     }
 
     .logo {
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
-        width: 110px !important;       
+        width: 110px !important;        
         height: 32px !important;       
-        background-image: url("./assets/images/logo.svg") !important;
+        flex-shrink: 0 !important;      
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg") !important; 
+        background-color: transparent !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         background-position: left center !important;
+    }
+
+    .nav-buttons {
+        gap: 8px !important; 
+    }
+
+    #language {
+        padding: 6px 10px !important; 
+        font-size: 0.85rem !important;
+    }
+
+    .signin {
+        padding: 6px 12px !important;
+        font-size: 0.85rem !important;
     }
 }
